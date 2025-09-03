@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vantiour Store</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+  }
+
+  header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #111;
+  }
+
+  .logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff0055;
+    text-shadow:
+      0 0 5px #ff0055,
+      0 0 10px #ff0055,
+      0 0 20px #ff0055,
+      0 0 40px #ff0055;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .product {
+    background: #1a1a1a;
+    border: 2px solid #ff0055;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s;
+  }
+
+  .product:hover {
+    transform: scale(1.05);
+  }
+
+  .product h2 {
+    margin: 0 0 10px 0;
+    color: #ff0055;
+  }
+
+  .price {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .buy-button {
+    background: #ff0055;
+    border: none;
+    padding: 12px 25px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+  }
+
+  .buy-button:hover {
+    background: #ff3399;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    font-size: 14px;
+    color: #888;
+  }
+
+  @media(max-width: 600px){
+    .product { width: 90%; }
+    .logo { font-size: 36px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Vantiour</div>
+</header>
+
+<main>
+  <div class="product">
+    <h2>Mythic 1#</h2>
+    <div class="price">$5</div>
+    <a href="https://sellix.io/yourlink1" class="buy-button" target="_blank">Buy Now</a>
+  </div>
+  <div class="product">
+    <h2>Mythic 2#</h2>
+    <div class="price">$5</div>
+    <a href="https://sellix.io/yourlink2" class="buy-button" target="_blank">Buy Now</a>
+  </div>
+  <div class="product">
+    <h2>Mythic 3#</h2>
+    <div class="price">$5</div>
+    <a href="https://sellix.io/yourlink3" class="buy-button" target="_blank">Buy Now</a>
+  </div>
+</main>
+
+<footer>
+  © 2025 Vantiour. All rights reserved.
+</footer>
+</body>
+</html>
